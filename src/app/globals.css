@@ -1,26 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* Custom colors */
+@theme  {
+  --color-hill-primary: #4a5c1f;
+  --color-hill-secondary: #cc6633;
+  --color-hill-bg: #fef9e4;
+  --color-hill-highlight: #e78169;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Fonts */
+@theme  {
+  --font-merrieweather: Merriweather, serif;
+  --font-karla: Karla, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.slick-dots li.slick-active div {
+  background-color: #cc6633; /* Blue for active dot */
+  transform: scale(1.2); /* Slightly enlarge active dot */
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.slick-dots li div {
+  transition: background-color 0.3s, transform 0.3s;
 }
+
+

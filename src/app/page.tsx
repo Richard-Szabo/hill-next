@@ -1,103 +1,85 @@
+import HeroSliderWrapper from "@/components/Slider/Hero/HeroSliderWrapper";
+import ServicesSliderWrapper from "@/components/Slider/Services/ServicesSliderWrapper";
+import { HeroSliderData, ServiceSliderData } from "@/data/Static/sliderdata";
 import Image from "next/image";
+
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      {/* Hero slider */}
+      <div className="relative w-full h-[550px] md:h-[806px] overflow-hidden">
+        <HeroSliderWrapper data={HeroSliderData} time={2500} />
+      </div>
+      {/* About us */}
+      <section className="w-full flex justify-center items-start pb-20">
+        <div className="w-full  max-w-6xl px-3 md:px-4 flex flex-col justify-center items-center font-hill2 gap-6">
+          <h1 className="text-center text-4xl md:text-5xl text-hill-primary font-bold">
+            Üdvözöljük a Hill Medicalnál
+          </h1>
+          <div className="space-y-3 text-md md:text-lg  text-justify font-hill ">
+            <div className="hidden md:block float-right w-80 h-80 mt-4 ml-4">
+              <Image
+                src="/images/employees/drfajzianna.jpg"
+                alt="Descriptive text"
+                width={1012} // Set large width for high-res screens
+                height={1024} // Height to maintain aspect ratio
+                priority
+                className="rounded-lg block "
+                style={{ width: "100%", height: "100%" }} 
+              />
+            </div>
+            <div className="md:hidden w-80 h-28 mx-auto">
+              <Image
+                src="/images/employees/drfajzianna.jpg"
+                alt="Descriptive text"
+                width={1012} // Set large width for high-res screens
+                height={1024} // Height to maintain aspect ratio
+                priority
+                className="rounded-lg block "
+                style={{ width: "100%", height: "100%" }} 
+              />
+            </div>
+            <p className="leading-6 md:leading-8">
+              Dr. Fajzi Anna és a NyárFa Dent közös erővel hozta létre a Hill
+              Medicalt, egy olyan magánfogászati központot, ahol a precizitás,
+              minőség, kedvesség és bizalom találkozik.
+            </p>
+            <p className="leading-6 md:leading-8">
+              Célunk egy olyan családias légkörű fogászati szolgáltatás
+              kialakítása, ahol a pácienseink minden pillanatban érzik, hogy
+              számukra fontosak és figyelünk rájuk. Dr. Fajzi Anna szakmai
+              tudása és empátiája iránytűként szolgál mindannyiunknak, és
+              elkötelezettek vagyunk abban, hogy a legmagasabb színvonalú
+              ellátást nyújtsuk.
+            </p>
+            <p className="leading-6 md:leading-8">
+              Szakterületünk fókuszában a fogpótlástan áll, beleértve az
+              implantológiát és a fix fogpótlásokat. A Hill Medical csapatában
+              kerámia, cirkónium és monocirkon esztétikai fogpótlásokat
+              kínálunk, amelyek precízen illeszkednek és természetes megjelenést
+              kölcsönöznek.
+            </p>
+            <p className="leading-6 md:leading-8">
+              Az általunk alkalmazott anyagok csúcsminőségűek és
+              biokompatibilisek, hogy biztosítsuk azt, hogy pácienseink mindig a
+              legjobb kezekben érezzék magukat. Célunk, hogy a Hill Medical ne
+              csak egy fogászati központ legyen, hanem egy hely, ahova
+              bizalommal lehet fordulni problémáinkkal. Az ellátás nem csak
+              feladataink közé tartozik, hanem hivatásunk része is.
+            </p>
+            <p className="leading-6 md:leading-8">
+              Köszönjük, hogy a Hill Medicalt választotta, és várjuk Önt a
+              mosolyának átalakítására és megőrzésére!
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      {/* Services slider  */}
+      <ServicesSliderWrapper data={ServiceSliderData} />
+      {/* XXXx */}
+      <div>sdad</div>
+    </>
   );
 }
