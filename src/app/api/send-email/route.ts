@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import nodemailer from "nodemailer";
+import sgTransport from "nodemailer-sendgrid";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -23,25 +24,20 @@ export async function POST(req: Request) {
     .replace("{{message}}", message);
 
   // Data from env
-  const SMTP_SERVER_HOST = process.env.SMTP_SERVER_HOST;
-  const SMTP_SERVER_USERNAME = process.env.SMTP_SERVER_USERNAME;
-  const SMTP_SERVER_PASSWORD = process.env.SMTP_SERVER_PASSWORD;
-  const SITE_MAIL_RECIEVER = process.env.SITE_MAIL_RECIEVER;
+  const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY!;
+  const SITE_MAIL_RECIEVER = process.env.SITE_MAIL_RECIEVER!;
+  const EMAIL_USER = process.env.EMAIL_USER!;
 
   // Email service
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: SMTP_SERVER_HOST,
-    port: 465,
-    secure: true,
-    auth: {
-      user: SMTP_SERVER_USERNAME,
-      pass: SMTP_SERVER_PASSWORD,
-    },
-  });
+    // Use SendGrid transport
+    const transporter = nodemailer.createTransport(
+      sgTransport({
+        apiKey: SENDGRID_API_KEY,
+      })
+    );
 
   await transporter.sendMail({
-    from: process.env.EMAIL_USER!,
+    from: EMAIL_USER,
     to: SITE_MAIL_RECIEVER,
     replyTo: email,
     subject: `[CONTACT-FORM] - ${name}`,
