@@ -4,19 +4,24 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev-local": "next dev --turbopack --hostname 192.168.50.95",
     "build": "next build",
-    "start": "next start",
+    "start": "next start --hostname 192.168.50.95",
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/nodemailer": "^6.4.17",
     "framer-motion": "^12.5.0",
     "hill-next": "file:",
     "next": "15.2.2",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
     "react-icons": "^5.5.0",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sonner": "^2.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -29,7 +34,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.14",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
 }

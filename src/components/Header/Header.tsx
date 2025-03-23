@@ -7,6 +7,7 @@ import { FiMail } from "react-icons/fi";
 import HamburgerMenu from "../Navigation/HamburgerMenu";
 import Link from "next/link";
 import useScroll from "@/hooks/useScroll";
+import { Toaster } from "sonner";
 
 export default function Header() {
   const isScrolled = useScroll();
@@ -14,17 +15,17 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300 ${
-        isScrolled ? "h-16 shadow-md " : "h-fit "
+        isScrolled ? "h-16 shadow-md " : "md:h-fit "
       }`}
     >
       <nav className="w-full flex justify-between items-center py-2 md:py-5 px-2 md:px-4 h-full border-b">
         {/* Left Section Mobile */}
-        <div className="flex md:hidden items-center  justify-start w-full max-w-1/3">
+        <Link href={'/'} className="flex md:hidden items-center  justify-start w-full max-w-1/3">
           <CompanyLogo
             className={` h-10 w-10 md:h-16 md:w-16`}
             fill="#576d2c"
           />
-        </div>
+        </Link>
         {/* Left Section Desktop */}
         <div
           className={`hidden md:flex md:pl-4 ${
@@ -58,7 +59,7 @@ export default function Header() {
           </a>
 
           <Link
-            href={"/kapcsolat"}
+            href={"/#contact-form"}
             className="flex flex-row items-center justify-start gap-2"
           >
             <span className="cursor-pointer transition-all duration-300 bg-hill-primary py-1 px-3 rounded-xl text-white font-medium text-md hover:bg-hill-secondary">
@@ -73,12 +74,15 @@ export default function Header() {
             isScrolled ? "flex-row" : "flex-col"
           }`}
         >
+          <Link href={'/'}>
           <CompanyLogo
             className={`hidden md:block transition-all duration-300 ${
               isScrolled ? "w-24 h-12" : "w-36 h-16"
             }`}
             fill="#576d2c"
           />
+          </Link>
+          
           <div>
             <h1 className="uppercase text-hill-primary text-lg md:text-3xl font-bold tracking-wider text-center text-shadow shadow-[#2f2f2f]/80 font-karla whitespace-nowrap notranslate">
               hill medical
@@ -123,6 +127,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      {/* Mobile bar */}
       <nav className="flex md:hidden border-b shadow-xl w-full py-2 justify-between px-3 bg-white">
         <div className="flex gap-6 justify-start items-center">
           <a
@@ -140,12 +145,16 @@ export default function Header() {
             </a>
           </button>
         </div>
-        <button className="flex flex-row items-center justify-start gap-2">
-          <span className="cursor-pointer transition-all duration-300 bg-hill-secondary py-1 px-3 rounded-xl text-white font-bold hover:bg-hill-primary text-sm">
-            Online bejelentkezés
-          </span>
-        </button>
+        <Link
+            href={"/#contact-form"}
+            className="flex flex-row items-center justify-start gap-2"
+          >
+            <span className="cursor-pointer transition-all duration-300 bg-hill-secondary py-1 px-3 rounded-xl text-white font-medium text-md hover:bg-hill-secondary">
+              Online bejelentkezés
+            </span>
+          </Link>
       </nav>
+      <Toaster />
     </header>
   );
 }

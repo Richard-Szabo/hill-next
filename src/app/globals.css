@@ -1,22 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-
-@import "tailwindcss";
-
-
-/* Custom colors */
-@theme  {
-  --color-hill-primary: #4a5c1f;
-  --color-hill-secondary: #cc6633;
-  --color-hill-bg: #fef9e4;
-  --color-hill-highlight: #e78169;
-}
-
-/* Fonts */
-@theme  {
-  --font-merrieweather: Merriweather, serif;
-  --font-karla: Karla, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .slick-dots li.slick-active div {
   background-color: #cc6633; /* Blue for active dot */
@@ -28,4 +14,15 @@
   transition: background-color 0.3s, transform 0.3s;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
+}
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.0) inset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
