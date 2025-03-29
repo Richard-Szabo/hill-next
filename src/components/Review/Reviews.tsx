@@ -33,11 +33,11 @@ export default function Reviews() {
     <section className="w-full flex flex-col md:flex-row justify-stretch items-stretch bg-hill-bg  ">
       <div className="w-full md:w-1/2 flex items-center justify-between flex-col gap-2">
         <div className="w-full h-1/4 pt-10 flex items-center justify-center">
-          <h1 className="font-hill2 font-bold text-2xl md:text-4xl text-hill-primary">
+          <h1 className="font-karla font-bold text-2xl md:text-4xl text-hill-primary">
             Rólunk mondták
           </h1>
         </div>
-        <div className="w-full h-2/4 px-3 md:px-20 text-center font-light font-hill text-md md:text-lg flex flex-col items-center justify-center">
+        <div className="w-full h-2/4 px-3 md:px-20 text-center font-light font-merrieweather text-md md:text-lg flex flex-col items-center justify-center">
           {/* Star Rating */}
           <div className="flex gap-1 text-yellow-400 pb-6">
             {Array(currentReview.rating)
@@ -63,7 +63,7 @@ export default function Reviews() {
         <div className="w-full h-1/4 flex justify-center items-center gap-4">
           <div className="w-24 h-24" onClick={() => handlePrevNext('prev')}>
             <div className="relative group m-5">
-              <div className="relative text-hill-primary uppercase font-hill-eng flex items-center justify-center overflow-hidden cursor-pointer">
+              <div className="relative text-hill-primary uppercase font-merrieweather-eng flex items-center justify-center overflow-hidden cursor-pointer">
                 <div className="absolute top-0 left-0 w-2/3 h-1/2 border-t-2 border-l-2 border-hill-primary transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:border-hill-primary"></div>
                 <div className="absolute bottom-0 right-0 w-2/3 h-1/2 border-b-2 border-r-2 border-hill-primary transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:border-hill-primary"></div>
                 <div className="bg-transparent w-full flex justify-center items-center px-3 py-2 transition duration-300 ease-in-out  group-hover:bg-hill-primary group-hover:text-white ">
@@ -74,7 +74,7 @@ export default function Reviews() {
           </div>
           <div className="w-24 h-24" onClick={() => handlePrevNext('next')}>
             <div className="relative group m-5">
-              <div className="relative text-hill-primary uppercase font-hill-eng flex items-center justify-center overflow-hidden cursor-pointer">
+              <div className="relative text-hill-primary uppercase font-merrieweather-eng flex items-center justify-center overflow-hidden cursor-pointer">
                 <div className="absolute top-0 left-0 w-2/3 h-1/2 border-t-2 border-l-2 border-hill-primary transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:border-hill-primary"></div>
                 <div className="absolute bottom-0 right-0 w-2/3 h-1/2 border-b-2 border-r-2 border-hill-primary transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:border-hill-primary"></div>
                 <div className="bg-transparent w-full flex justify-center items-center px-3 py-2 transition duration-300 ease-in-out  group-hover:bg-hill-primary group-hover:text-white ">

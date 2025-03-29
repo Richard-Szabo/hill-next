@@ -25,10 +25,10 @@ export default function HeroSliderItem({
       </div>
       <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-30 flex justify-center items-center gap-6  px-3 md:px-[40px] flex-col lg:flex-row">
         <div className="lg:w-1/2 flex items-center md:items-start justify-center flex-col gap-3 md:gap-6">
-          <p className="text-center md:text-left text-2xl md:text-4xl text-white font-bold font-hill2">
+          <p className="text-center md:text-left text-2xl md:text-4xl text-white font-bold font-karla">
             {item.highlightText}
           </p>
-          <p className="text-center md:text-left font-hill2 text-xl md:text-2xl text-white font-light">
+          <p className="text-center md:text-left font-karla text-xl md:text-2xl text-white font-light">
             {item.description}
           </p>
           {item.link && <Link href={item.link}>

@@ -22,8 +22,10 @@ module.exports =  {
         'hill-highlight' : '#e78169'
       },
       fontFamily: {
-        merrieweather: ["Merriweather", 'serif'], 
-        karla: ['Karla', 'sans-serif']
+        // merrieweather: ["Merriweather", 'serif'], 
+        // karla: ['Karla', 'sans-serif']
+        karla: ['var(--font-karla)'],
+        merrieweather: ['var(--font-merriweather)'],
       },
     },
   },

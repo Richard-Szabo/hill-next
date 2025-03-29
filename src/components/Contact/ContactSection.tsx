@@ -14,10 +14,10 @@ export default function ContactSection() {
       className="w-full flex flex-col justify-start items-center py-14 md:py-20"
     >
       <div className="w-full max-w-7xl px-2 md:px-4 flex flex-col justify-center items-center gap-6 md:gap-10">
-        <h1 className="font-hill2 text-2xl md:text-5xl font-bold text-hill-primary text-center">
+        <h1 className="font-karla text-2xl md:text-5xl font-bold text-hill-primary text-center">
           Lépjen kapcsolatba velünk még ma!
         </h1>
-        <p className="font-hill text-md md:text-2xl text-center font-light text-hill-primary leading-7 md:leading-10">
+        <p className="font-merrieweather text-md md:text-2xl text-center font-light text-hill-primary leading-7 md:leading-10">
           Arra bátorítjuk Önt, hogy vegye fel velünk a kapcsolatot, amennyiben
           érdeklődik valamelyik általunk kínált fogászati eljárás vagy
           szolgáltatás iránt.

@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <section className="w-full overflow-x-hidden flex justify-center items-center md:items-start pb-20">
-      <div className="w-full max-w-6xl px-4 flex flex-col justify-center items-center font-hill2 gap-6">
+      <div className="w-full max-w-6xl px-4 flex flex-col justify-center items-center font-karla gap-6">
         <h1 className="text-center text-4xl md:text-5xl text-hill-primary font-bold">
           Üdvözöljük a Hill Medicalnál
         </h1>
 
-        <div className="relative w-full space-y-3 text-md md:text-lg text-justify font-hill">
+        <div className="relative w-full space-y-3 text-md md:text-lg text-justify font-merrieweather">
           {/* Desktop image floated right */}
-          <div className="hidden md:block float-right md:h-80 ml-2 mb-2 ">
+          <div className="hidden md:block float-right max-h-80 ml-8 mb-2 w-[500px]">
             <Image
               src="/images/rendelo.jpg"
               alt="Hillmedical épülete"

@@ -16,11 +16,11 @@ export default function ServicesSliderWrapper({
   return (
     <section className="flex w-full flex-col justify-start items-center bg-hill-bg py-14 md:py-20 gap-4">
       {/* Static Text */}
-      <div className="w-full max-w-7xl px-2 md:px-4 flex flex-col justify-center items-center font-hill2 text-hill-primary gap-3 md:gap-6">
+      <div className="w-full max-w-7xl px-2 md:px-4 flex flex-col justify-center items-center font-karla text-hill-primary gap-3 md:gap-6">
         <h1 className="text-2xl md:text-4xl font-bold text-center ">
           Ön a legjobb kezekben lesz nálunk
         </h1>
-        <p className="font-light texl-lg md:text-2xl text-center font-hill tracking-wider py-3 md:py-6 leading-7 md:leading-10">
+        <p className="font-light texl-lg md:text-2xl text-center font-merrieweather tracking-wider py-3 md:py-6 leading-7 md:leading-10">
           A legmodernebb fogászati technológiákat alkalmazzuk, hogy a
           legkorszerűbb és leghatékonyabb kezeléseket nyújthassuk Önnek.
         </p>

@@ -24,7 +24,7 @@ export default function ServicesSliderItem({
          fill
         />
         <div className="absolute bottom-8 md:bottom-24 right-0 mr-[8px] flex flex-col items-end gap-3">
-          <span className="font-bold tracking-wider font-hill2 md:text-2xl text-hill-primary bg-gray-300/80  px-6 py-2">
+          <span className="font-bold tracking-wider font-karla md:text-2xl text-hill-primary bg-gray-300/80  px-6 py-2">
             {item.highlightText}
           </span>
           
@@ -69,7 +69,7 @@ export default function ServicesSliderItem({
 
         {/* Content Overlay */}
         <motion.div
-          className="flex bg-white h-1/2 w-full p-4 flex-col justify-start items-start font-hill2 space-y-8"
+          className="flex bg-white h-1/2 w-full p-4 flex-col justify-start items-start font-karla space-y-8"
           variants={{
             hidden: { opacity: 0, y: 40 }, // Semi-visible with less offset
             visible: {

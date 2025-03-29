@@ -59,7 +59,7 @@ export default function ContactForm() {
           <input
             type="text"
             id="lastName"
-            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-hill border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
+            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-merrieweather border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
                 ${
                   errors.lastName
                     ? "border-b-red-500 focus:border-b-red-500"
@@ -71,7 +71,7 @@ export default function ContactForm() {
           />
           <label
             htmlFor="lastName"
-            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-hill peer-focus:hidden peer-placeholder-shown:block text-gray-100"
+            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-merrieweather peer-focus:hidden peer-placeholder-shown:block text-gray-100"
           >
             Vezetéknév*
           </label>
@@ -85,7 +85,7 @@ export default function ContactForm() {
           <input
             type="text"
             id="firstName"
-            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-hill border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
+            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-merrieweather border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
                 ${
                   errors.firstName
                     ? "border-b-red-500 focus:border-b-red-500"
@@ -97,7 +97,7 @@ export default function ContactForm() {
           />
           <label
             htmlFor="firstName"
-            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-hill peer-focus:hidden peer-placeholder-shown:block text-gray-100"
+            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-merrieweather peer-focus:hidden peer-placeholder-shown:block text-gray-100"
           >
             Keresztnév*
           </label>
@@ -114,7 +114,7 @@ export default function ContactForm() {
           <input
             type="email"
             id="email"
-            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-hill border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
+            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-merrieweather border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
                 ${
                   errors.email
                     ? "border-b-red-500 focus:border-b-red-500"
@@ -132,7 +132,7 @@ export default function ContactForm() {
           />
           <label
             htmlFor="email"
-            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-hill peer-focus:hidden peer-placeholder-shown:block text-gray-100"
+            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-merrieweather peer-focus:hidden peer-placeholder-shown:block text-gray-100"
           >
             E-mail cím*
           </label>
@@ -146,7 +146,7 @@ export default function ContactForm() {
           <input
             type="text"
             id="phone"
-            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-hill border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
+            className={`font-semibold block py-2.5 px-3 w-full text-sm md:text-md font-merrieweather border-b-2 bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
                 ${
                   errors.phone
                     ? "border-b-red-500 focus:border-b-red-500"
@@ -165,7 +165,7 @@ export default function ContactForm() {
           />
           <label
             htmlFor="phone"
-            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-hill peer-focus:hidden peer-placeholder-shown:block text-gray-100"
+            className="hidden absolute bottom-1/2 translate-y-1/2 text-sm md:text-md left-3 font-merrieweather peer-focus:hidden peer-placeholder-shown:block text-gray-100"
           >
             Telefonszám*
           </label>
@@ -181,7 +181,7 @@ export default function ContactForm() {
         <textarea
           id="msg"
           placeholder=" "
-          className={`font-semibold px-3 py-1 h-24 w-full scroll-y-auto text-sm md:text-md font-hill border bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
+          className={`font-semibold px-3 py-1 h-24 w-full scroll-y-auto text-sm md:text-md font-merrieweather border bg-white/30  appearance-none focus:outline-none focus:ring-0 peer 
             ${
               errors.firstName
                 ? "border-b-red-500 focus:border-b-red-500"
@@ -194,7 +194,7 @@ export default function ContactForm() {
         ></textarea>
         <label
           htmlFor="msg"
-          className="hidden absolute top-1 left-3 text-sm md:text-md font-hill peer-focus:hidden peer-placeholder-shown:block text-gray-100"
+          className="hidden absolute top-1 left-3 text-sm md:text-md font-merrieweather peer-focus:hidden peer-placeholder-shown:block text-gray-100"
         >
           Az ön üzenete*
         </label>

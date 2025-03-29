@@ -40,15 +40,15 @@ export default function ContactClient() {
       viewport={{ once: true }}
       className="flex flex-col items-center justify-start w-full h-full bg-hill-primary md:bg-hill-primary/95 pt-3 md:pt-10 pb-3 md:pb-0 px-3 md:px-10 gap-3"
     >
-      <h1 className="font-hill2 text-2xl md:text-4xl text-white pb-3 md:pb-6">
+      <h1 className="font-karla text-2xl md:text-4xl text-white pb-3 md:pb-6">
         Kapcsolatfelvétel
       </h1>
 
-      <p className="font-hill text-md md:text-lg text-center text-white font-light pb-3 md:pb-0">
+      <p className="font-merrieweather text-md md:text-lg text-center text-white font-light pb-3 md:pb-0">
         Örömmel várjuk megkeresését, és szívesen mesélünk Önnek korszerű
         rendelőnkről és az általunk nyújtott számos szolgáltatásról.
       </p>
-      <p className="hidden md:block font-hill text-md text-white font-light">
+      <p className="hidden md:block font-merrieweather text-md text-white font-light">
         Legyen szó kérdésekről a rendelőnkkel kapcsolatban, konzultáció iránti
         érdeklődésről, vagy időpontfoglalásról, barátságos és hozzáértő
         csapatunk szívesen fogadja hívását. Ezenkívül kényelmesen, online is
