@@ -1,72 +1,78 @@
 import Image from "next/image";
 
-export default function AboutUs(){
-    return (
-        <section className="w-full overflow-x-hidden flex justify-center items-center md:items-start pb-20">
-        <div className="w-full max-w-6xl px-4 flex flex-col justify-center items-center font-hill2 gap-6">
-          <h1 className="text-center text-4xl md:text-5xl text-hill-primary font-bold">
-            Üdvözöljük a Hill Medicalnál
-          </h1>
+export default function AboutUs() {
+  return (
+    <section className="w-full overflow-x-hidden flex justify-center items-center md:items-start pb-20">
+      <div className="w-full max-w-6xl px-4 flex flex-col justify-center items-center font-hill2 gap-6">
+        <h1 className="text-center text-4xl md:text-5xl text-hill-primary font-bold">
+          Üdvözöljük a Hill Medicalnál
+        </h1>
 
-          <div className="relative w-full  space-y-3 text-md md:text-lg text-justify font-hill">
-            {/* Desktop image floated right */}
-            <div className="hidden md:block float-right md:w-80 md:h-80 ml-2 mb-2">
-              <Image
-                src="/images/employees/drfajzianna.jpg"
-                alt="Dr. Fajzi Anna"
-                width={1012}
-                height={1024}
-                priority
-                className="rounded-lg object-cover w-full h-full"
-              />
-            </div>
-
-            {/* Mobile image centered */}
-            <div className="md:hidden w-64 h-64 mx-auto">
-              <Image
-                src="/images/employees/drfajzianna.jpg"
-                alt="Dr. Fajzi Anna"
-                width={1012}
-                height={1024}
-                priority
-                className="rounded-lg object-cover w-full h-full"
-              />
-            </div>
-
-            <p className="leading-6 md:leading-8">
-              Dr. Fajzi Anna és a NyárFa Dent közös erővel hozta létre a Hill
-              Medicalt, egy olyan magánfogászati központot, ahol a precizitás,
-              minőség, kedvesség és bizalom találkozik.
-            </p>
-            <p className="leading-6 md:leading-8">
-              Célunk egy olyan családias légkörű fogászati szolgáltatás
-              kialakítása, ahol a pácienseink minden pillanatban érzik, hogy
-              számukra fontosak és figyelünk rájuk. Dr. Fajzi Anna szakmai
-              tudása és empátiája iránytűként szolgál mindannyiunknak, és
-              elkötelezettek vagyunk abban, hogy a legmagasabb színvonalú
-              ellátást nyújtsuk.
-            </p>
-            <p className="leading-6 md:leading-8">
-              Szakterületünk fókuszában a fogpótlástan áll, beleértve az
-              implantológiát és a fix fogpótlásokat. A Hill Medical csapatában
-              kerámia, cirkónium és monocirkon esztétikai fogpótlásokat
-              kínálunk, amelyek precízen illeszkednek és természetes megjelenést
-              kölcsönöznek.
-            </p>
-            <p className="leading-6 md:leading-8">
-              Az általunk alkalmazott anyagok csúcsminőségűek és
-              biokompatibilisek, hogy biztosítsuk azt, hogy pácienseink mindig a
-              legjobb kezekben érezzék magukat. Célunk, hogy a Hill Medical ne
-              csak egy fogászati központ legyen, hanem egy hely, ahova
-              bizalommal lehet fordulni problémáinkkal. Az ellátás nem csak
-              feladataink közé tartozik, hanem hivatásunk része is.
-            </p>
-            <p className="leading-6 md:leading-8">
-              Köszönjük, hogy a Hill Medicalt választotta, és várjuk Önt a
-              mosolyának átalakítására és megőrzésére!
-            </p>
+        <div className="relative w-full space-y-3 text-md md:text-lg text-justify font-hill">
+          {/* Desktop image floated right */}
+          <div className="hidden md:block float-right md:h-80 ml-2 mb-2 w-80">
+            <Image
+              src="/images/about.jpg"
+              alt="Dr. Fajzi Anna"
+              width={1500}
+              height={1000}
+              priority
+              className="rounded-lg object-cover w-full h-full"
+            />
           </div>
+
+          {/* Mobile image centered */}
+          <div className="md:hidden w-full h-64 mx-auto">
+            <Image
+              src="/images/about.jpg"
+              alt="Dr. Fajzi Anna"
+              width={1500}
+              height={1000}
+              priority
+              className="rounded-lg object-cover w-full h-full"
+            />
+          </div>
+
+          <p className="leading-6 md:leading-8">
+            A Hill Medical fogorvosi rendelő Győrújbaráton, Győr mellett kínál magas színvonalú magán fogászati ellátást. Szakértő fogszakorvosaink, dentálhigiénikusaink és asszisztenseink csapatmunkájának köszönhetően pácienseink mindig biztonságban és jó kezekben érezhetik magukat.
+          </p>
+
+          <p className="leading-6 md:leading-8">
+            Szolgáltatásaink között megtalálható:
+          </p>
+
+          <ul className="space-y-1">
+            <li className="flex flex-col md:flex-row gap-2 items-start ms-3">
+              <span className="font-bold">Fogászati implantátumok</span>
+              <span>- Tartós és esztétikus megoldások foghiányra</span>
+            </li>
+            <li className="flex flex-col md:flex-row gap-2 items-start ms-3">
+              <span className="font-bold">Fogpótlás és fémmentes cirkónium koronák</span>
+              <span>- Természetes hatású, prémium minőség</span>
+            </li>
+            <li className="flex flex-col md:flex-row gap-2 items-start ms-3">
+              <span className="font-bold">Esztétikai fogászat</span>
+              <span>- Fehér tömések, fogfehérítés, mosolytervezés</span>
+            </li>
+            <li className="flex flex-col md:flex-row gap-2 items-start ms-3">
+              <span className="font-bold">Fogszabályozás gyermekeknek és felnőtteknek</span>
+              <span>- A szép mosolyért</span>
+            </li>
+            <li className="flex flex-col md:flex-row gap-2 items-start ms-3">
+              <span className="font-bold">Sürgősségi fogászati ellátás</span>
+              <span>- Gyors segítség fájdalom vagy sérülés esetén</span>
+            </li>
+          </ul>
+
+          <p className="leading-6 md:leading-8">
+            Nálunk a szakértelem, türelem és megbízhatóság az alapértékek közé tartoznak, mert tudjuk, hogy a tökéletes mosolyhoz nemcsak kiváló technológia, hanem emberközpontú hozzáállás is szükséges.
+          </p>
+
+          <p className="leading-6 md:leading-8">
+            Keress minket Győrújbaráton, pár percre Győrtől! Foglalj időpontot még ma!
+          </p>
         </div>
-      </section>
-    )
+      </div>
+    </section>
+  );
 }

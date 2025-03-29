@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <main className="pt-28 md:pt-28 flex-grow max-w-screen">{children}</main>
+        <main className="pt-28 md:pt-[156px] flex-grow max-w-screen">{children}</main>
       </body>
     </html>
   );

@@ -10,7 +10,7 @@ const ContactClient = dynamic(() => import("./ContactClient"), {
 export default function ContactSection() {
   return (
     <section
-      id="contact-form"
+      id="kapcsolat"
       className="w-full flex flex-col justify-start items-center py-14 md:py-20"
     >
       <div className="w-full max-w-7xl px-2 md:px-4 flex flex-col justify-center items-center gap-6 md:gap-10">
@@ -24,7 +24,7 @@ export default function ContactSection() {
         </p>
 
         <div className="relative w-full justify-center items-center md:p-[8px]">
-          <Image src="/images/office.jpg" alt="" width={5040} height={3310} />
+          <Image src="/images/office.jpg" alt="" width={1500} height={1000} />
           <div className="absolute bottom-0 left-0 w-3/4 h-3/4 border-b-[8px] border-l-[8px] border-hill-primary"></div>
           <div className="absolute top-0 right-0 w-3/4 h-3/4 border-t-[8px] border-r-[8px] border-hill-primary"></div>
                     

@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import ServicesMenu from "./ServicesMenu"; // Import Server Component
 import useScroll from "@/hooks/useScroll";
+import Link from "next/link";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +88,7 @@ export default function HamburgerMenu() {
                   onClick={() => setIsOpen(false)}
                   className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-primary py-2"
                 >
-                  Árlista
+                  <Link href={'/arlista'}>Árlista</Link>
                 </li>
                 <li
                   onClick={() => setIsOpen(false)}

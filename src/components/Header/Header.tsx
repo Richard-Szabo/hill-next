@@ -59,7 +59,7 @@ export default function Header() {
           </a>
 
           <Link
-            href={"/#contact-form"}
+            href={"/#kapcsolat"}
             className="flex flex-row items-center justify-start gap-2"
           >
             <span className="cursor-pointer transition-all duration-300 bg-hill-primary py-1 px-3 rounded-xl text-white font-medium text-md hover:bg-hill-secondary">

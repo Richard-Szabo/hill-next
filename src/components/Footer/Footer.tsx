@@ -18,7 +18,7 @@ export default function Footer() {
               érdeklődik, vagy időpontot szeretne foglalni, barátságos és
               hozzáértő csapatunk örömmel fogadja hívását.
             </p>
-            <Link href="/#contact-form" >
+            <Link href="/#kapcsolat" >
               <SquareButton
                 label="Kapcsolatfelvétel"
                 textColor="text-[#576d2c]"

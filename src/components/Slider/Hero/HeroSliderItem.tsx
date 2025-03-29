@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { SliderItemProps } from "@/data/Static/sliderdata"; 
+import SquareButton from "@/components/Shared/Basic/SquareButton";
+import Link from "next/link";
 
 interface SliderItemComponentProps {
   item: SliderItemProps;
@@ -22,16 +24,16 @@ export default function HeroSliderItem({
         />
       </div>
       <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-30 flex justify-center items-center gap-6  px-3 md:px-[40px] flex-col lg:flex-row">
-        <div className="lg:w-1/2 flex items-center md:items-start justify-center flex-col gap-6">
-          <p className="text-center md:text-left text-3xl md:text-4xl text-white font-bold font-hill2">
+        <div className="lg:w-1/2 flex items-center md:items-start justify-center flex-col gap-3 md:gap-6">
+          <p className="text-center md:text-left text-2xl md:text-4xl text-white font-bold font-hill2">
             {item.highlightText}
           </p>
           <p className="text-center md:text-left font-hill2 text-xl md:text-2xl text-white font-light">
             {item.description}
           </p>
-          <div>
-            {/* <SquareButton  label="Új páciensek" borderSize="sm" bgHighlightColor="group-hover:bg-hill-primary" /> */}
-          </div>
+          {item.link && <Link href={item.link}>
+            <SquareButton  label="Tovább olvasok" borderSize="sm" bgHighlightColor="group-hover:bg-hill-primary" />
+          </Link>}
         </div>
         <div className="relative p-[10px]  ">
           <Image

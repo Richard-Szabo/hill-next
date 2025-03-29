@@ -76,7 +76,7 @@ const SquareButton = forwardRef<HTMLButtonElement, SquareButtonProps>(
 
         {/* Button Content */}
         <div
-          className={`h-full w-full flex items-center justify-center px-8 ${textColor} ${bgColor} ${bgHighlightColor} ${textHighlightColor} transition duration-600 ease-in-out`}
+          className={`h-full w-full flex items-center justify-center px-8 ${textColor} ${bgColor} ${bgHighlightColor} ${textHighlightColor} transition duration-600 ease-in-out text-xl font-bold`}
         >
           {isLoading ? <div className="animate-spin"><BiLoaderAlt  size={20}  /></div> : label}
         </div>
