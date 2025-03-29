@@ -10,12 +10,12 @@ export default function AboutUs() {
 
         <div className="relative w-full space-y-3 text-md md:text-lg text-justify font-hill">
           {/* Desktop image floated right */}
-          <div className="hidden md:block float-right md:h-80 ml-2 mb-2 w-80">
+          <div className="hidden md:block float-right md:h-80 ml-2 mb-2 ">
             <Image
-              src="/images/about.jpg"
-              alt="Dr. Fajzi Anna"
-              width={1500}
-              height={1000}
+              src="/images/rendelo.jpg"
+              alt="Hillmedical épülete"
+              width={1000}
+              height={667}
               priority
               className="rounded-lg object-cover w-full h-full"
             />
@@ -24,10 +24,10 @@ export default function AboutUs() {
           {/* Mobile image centered */}
           <div className="md:hidden w-full h-64 mx-auto">
             <Image
-              src="/images/about.jpg"
-              alt="Dr. Fajzi Anna"
-              width={1500}
-              height={1000}
+              src="/images/rendelo.jpg"
+              alt="Hillmedical épülete"
+              width={1000}
+              height={667}
               priority
               className="rounded-lg object-cover w-full h-full"
             />

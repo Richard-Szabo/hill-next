@@ -62,7 +62,7 @@ export default function HamburgerMenu() {
                   onClick={() => setIsOpen(false)}
                   className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-primary py-2"
                 >
-                  Rólunk
+                  <Link href={'/rolunk'}>Rólunk</Link>
                 </li>
                 <li className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary py-2">
                   <p
@@ -79,7 +79,7 @@ export default function HamburgerMenu() {
                         exit={{ opacity: 0 }}
                         className="font-karla w-full"
                       >
-                        <ServicesMenu /> {/* Render Server Component here */}
+                        <ServicesMenu handleClose={() => setIsOpen(false)} /> {/* Render Server Component here */}
                       </motion.div>
                     )}
                   </AnimatePresence>

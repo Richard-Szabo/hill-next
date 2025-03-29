@@ -47,9 +47,9 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         id: 2,
         highlightText: "Fogszabályozás",
         description: "Szabályos, egészséges mosoly minden korosztálynak! Láthatatlan és hagyományos fogszabályozási megoldások felnőtteknek és gyerekeknek.",
-        image: 'kid-2',
+        image: 'fogszabalyozas-hero',
         extension: 'jpg',
-        imageMini: 'kid-1',
+        imageMini: 'fogszabalyozas-hero',
         extensionMini: 'jpg'
     },
     {
@@ -74,9 +74,9 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         id: 4,
         highlightText: "Fix fogpótlások",
         description: "Esztétikus, stabil és kényelmes megoldások hiányzó fogak pótlására. Válaszd a fémmentes cirkónium koronákat vagy implantátumokat!",
-        image: 'kid-1',
+        image: 'fogpotlas-hero',
         extension: 'jpg',
-        imageMini: 'kid-1',
+        imageMini: 'fogpotlas-hero',
         extensionMini: 'jpg'
     }
 ]

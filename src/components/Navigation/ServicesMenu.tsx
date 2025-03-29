@@ -38,7 +38,7 @@ const ServicesMenuItems: ServicesMenuItemProps[] = [
   },
   {
     label: "Fogszabályozás",
-    to: "/fogszabályozás",
+    to: "/fogszabalyozas",
     subItems: [
       {
         label: "Láthatatlan sínek",
@@ -123,7 +123,7 @@ const ServicesMenuItems: ServicesMenuItemProps[] = [
 ];
 
 
-export default function ServicesMenu() {
+export default function ServicesMenu({handleClose}: {handleClose: () => void}) {
   return (
     <ul className="w-full flex flex-col md:flex-row md:flex-wrap text-lg md:text-xl font-light pt-3 md:pt-5 pl-2 md:pl-5 space-y-3">
       {ServicesMenuItems.map((item, index) => (
@@ -135,7 +135,7 @@ export default function ServicesMenu() {
             <ul className="flex flex-col xl:flex-row xl:gap-4 mb-2 md:mb-0">
               {item.subItems.map((subItem, subIndex) => (
                 <li key={subIndex} className="whitespace-nowrap hover:text-hill-primary">
-                  <Link href={`${item.to}${subItem.to}`}>{subItem.label}</Link>
+                  <Link href={`${item.to}${subItem.to}`} onClick={handleClose}>{subItem.label}</Link>
                 </li>
               ))}
             </ul>

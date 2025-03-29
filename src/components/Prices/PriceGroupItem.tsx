@@ -1,4 +1,4 @@
-import { formatCurrency } from "@/app/utils/format";
+import { formatCurrency } from "@/utils/format";
 import { PricesData } from "@/data/Static/price";
 
 export default function PriceGroupItem({ data }: { data: PricesData }) {
