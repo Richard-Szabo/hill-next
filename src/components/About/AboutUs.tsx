@@ -10,19 +10,19 @@ export default function AboutUs() {
 
         <div className="relative w-full space-y-3 text-md md:text-lg text-justify font-merrieweather">
           {/* Desktop image floated right */}
-          <div className="hidden md:block float-right max-h-80 ml-8 mb-2 w-[500px]">
+          <div className="hidden lg:block float-right h-60 lg:h-80 ml-8 lg:w-[28rem]">
             <Image
               src="/images/rendelo.jpg"
               alt="Hillmedical épülete"
               width={1000}
               height={667}
               priority
-              className="rounded-lg object-cover w-full h-full"
+              className="rounded-lg object-cover w-full h-full ml-8"
             />
           </div>
 
           {/* Mobile image centered */}
-          <div className="md:hidden w-full h-64 mx-auto">
+          <div className="lg:hidden w-full h-64 mx-auto">
             <Image
               src="/images/rendelo.jpg"
               alt="Hillmedical épülete"

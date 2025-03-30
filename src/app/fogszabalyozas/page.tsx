@@ -49,7 +49,7 @@ export default function Fogszabalyozas() {
         </article>
 
         <div className="w-full flex justify-center bg-hill-bg py-8 px-3 md:px-0">
-          <article id="lathatatlan" className="w-full max-w-5xl flex flex-col items-start">
+          <article id="lathatatlan" className="w-full max-w-5xl flex flex-col items-start scroll-mt-32">
             <h2 className="text-xl font-semibold font-merrieweather">
               Láthatatlan fogszabályozás – Diszkrét és hatékony megoldás
             </h2>
@@ -65,7 +65,7 @@ export default function Fogszabalyozas() {
           </article>
         </div>
 
-        <article id="rogzitett" className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0">
+        <article id="rogzitett" className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0 scroll-mt-32">
           <h2 className="text-xl font-semibold mt-6 font-merrieweather">
             Rögzített fogszabályozás – Klasszikus, de modern köntösben
           </h2>

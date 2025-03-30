@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <section className="w-full flex justify-center items-center py-10 md:py-20">
-      <div className="w-full max-w-6xl flex justify-center items-center flex-col gap-6 px-1 md:px-0">
+      <div className="w-full max-w-6xl flex justify-center items-center flex-col gap-6 px-1 md:px-8 lg:px-0">
         <h1 className="font-karla text-2xl md:text-4xl font-medium text-hill-primary text-center">
           Kényelmesen megközelíthető, mindig elérhető
         </h1>

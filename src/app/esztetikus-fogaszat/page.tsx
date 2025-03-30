@@ -49,7 +49,7 @@ export default function EsztetikusFogaszat() {
         </article>
 
         <div className="w-full flex justify-center bg-hill-bg py-8 px-3 md:px-0">
-          <article className="w-full max-w-5xl flex flex-col items-start">
+          <article id="termeszetes-tomesek" className="w-full max-w-5xl flex flex-col items-start scroll-mt-32">
             <h2 className="text-xl font-semibold font-merrieweather">
               Természetes hatású, tartós fogtömések
             </h2>
@@ -67,7 +67,7 @@ export default function EsztetikusFogaszat() {
           </article>
         </div>
 
-        <article className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0">
+        <article id="hejak-inlay" className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0 scroll-mt-32">
           <h2 className="text-xl font-semibold mt-6 font-merrieweather">
             Héjak és inlay-k – A tökéletes esztétikai megoldások
           </h2>

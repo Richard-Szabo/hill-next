@@ -15,26 +15,27 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300 ${
-        isScrolled ? "h-16 shadow-md " : "md:h-fit "
+        isScrolled ? "h-16 shadow-md " : "lg:h-fit "
       }`}
     >
-      <nav className="w-full flex justify-between items-center py-2 md:py-5 px-2 md:px-4 h-full border-b">
+      <nav className="w-full flex justify-between items-center py-2 lg:py-5 px-2 lg:px-4 h-full border-b">
         {/* Left Section Mobile */}
-        <Link href={'/'} className="flex md:hidden items-center  justify-start w-full max-w-1/3">
+        <Link href={'/'} className="flex lg:hidden items-center  justify-start w-full max-w-1/3" aria-label="HillMedical Főoldal!">
           <CompanyLogo
-            className={` h-10 w-10 md:h-16 md:w-16`}
+            className={` h-10 w-10 lg:h-16 lg:w-16`}
             fill="#576d2c"
           />
         </Link>
         {/* Left Section Desktop */}
         <div
-          className={`hidden md:flex md:pl-4 ${
+          className={`hidden lg:flex lg:pl-4 ${
             isScrolled
               ? "flex-row justify-start items-center gap-5"
               : "flex-col justify-center items-start gap-1"
           }     text-hill-primary font-merrieweather text-lg w-full max-w-1/3 `}
         >
           <a
+          aria-label="Hívjon minket!"
             href={`tel:${contactData.phone_href}`}
             className="flex flex-row items-center justify-start gap-2"
           >
@@ -47,6 +48,7 @@ export default function Header() {
           </a>
 
           <a
+          aria-label="Küldjön e-mailt nekünk!"
             href={`mailto:${contactData.email}`}
             className="flex flex-row items-center justify-start gap-2"
           >
@@ -74,9 +76,9 @@ export default function Header() {
             isScrolled ? "flex-row" : "flex-col"
           }`}
         >
-          <Link href={'/'}>
+          <Link href={'/'} aria-label="HillMedical Főoldal!">
           <CompanyLogo
-            className={`hidden md:block transition-all duration-300 ${
+            className={`hidden lg:block transition-all duration-300 ${
               isScrolled ? "w-24 h-12" : "w-36 h-16"
             }`}
             fill="#576d2c"
@@ -84,16 +86,16 @@ export default function Header() {
           </Link>
           
           <div>
-            <h1 className="uppercase text-hill-primary text-lg md:text-3xl font-bold tracking-wider text-center text-shadow shadow-[#2f2f2f]/80 font-karla whitespace-nowrap notranslate">
+            <h1 className="uppercase text-hill-primary text-lg lg:text-3xl font-bold tracking-wider text-center text-shadow shadow-[#2f2f2f]/80 font-karla whitespace-nowrap notranslate">
               hill medical
             </h1>
             <div
               className={`relative flex
-            justify-center items-center w-40 md:w-52`}
+            justify-center items-center w-40 lg:w-52`}
             >
               <div className="flex items-center gap-2 w-full">
                 <div className="flex-1 border-b border-black"></div>
-                <p className="text-center whitespace-nowrap text-xs md:text-md font-medium font-karla uppercase text-hill-secondary">
+                <p className="text-center whitespace-nowrap text-xs lg:text-md font-medium font-karla uppercase text-hill-secondary">
                   Családi Fogászat
                 </p>
                 <div className="flex-1 border-b border-black"></div>
@@ -103,9 +105,9 @@ export default function Header() {
         </div>
 
         {/* Right Section */}
-        <div className="w-full max-w-1/3 flex flex-row justify-end items-center md:pr-4 gap-3">
+        <div className="w-full max-w-1/3 flex flex-row justify-end items-center lg:pr-4 gap-3">
           <div
-            className={`hidden md:flex flex-col items-start justify-center font-merrieweather text-hill-primary text-light ${
+            className={`hidden lg:flex flex-col items-start justify-center font-merrieweather text-hill-primary text-light ${
               isScrolled ? "text-sm" : "text-lg"
             } gap-1 pr-6`}
           >
@@ -128,9 +130,10 @@ export default function Header() {
         </div>
       </nav>
       {/* Mobile bar */}
-      <nav className="flex md:hidden border-b shadow-xl w-full py-2 justify-between px-3 bg-white">
+      <nav className="flex lg:hidden border-b shadow-xl w-full py-2 justify-between px-3 bg-white">
         <div className="flex gap-6 justify-start items-center">
           <a
+          aria-label="Hívjon minket!"
             href={`tel:${contactData.phone_href}`}
             className="flex flex-row items-center justify-start "
           >
@@ -138,6 +141,7 @@ export default function Header() {
           </a>
           <button>
             <a
+            aria-label="Küldjön e-mailt nekünk!"
               href={`mailto:${contactData.email}`}
               className="flex flex-row items-center justify-start"
             >

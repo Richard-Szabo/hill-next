@@ -12,7 +12,7 @@ export default function ServicesSliderItem({
   item,
 }: ServiceSliderItemProps) {
   return (
-    <div className="px-6 basis-full  w-[430px] h-[520px] relative  pt-4">
+    <div className="px-6 basis-full  w-[400px] h-[480px] lg:w-[430px] lg:h-[520px] relative  pt-4">
       {/* Background Block */}
       <div className="relative w-full h-full p-[8px] ">
         

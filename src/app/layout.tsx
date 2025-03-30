@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 
@@ -23,6 +23,11 @@ export const metadata: Metadata = {
   description: "Hill Medical családi fogászat",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,7 +37,9 @@ export default function RootLayout({
     <html lang="en" className={`${karla.variable} ${merriweather.variable}`}>
       <body>
         <Header />
-        <main className="pt-28 md:pt-[156px] flex-grow max-w-screen">{children}</main>
+        <main className="pt-28 lg:pt-[156px] flex-grow max-w-screen">
+          {children}
+        </main>
       </body>
     </html>
   );

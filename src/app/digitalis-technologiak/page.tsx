@@ -45,7 +45,7 @@ export default function DigitalisTechnologiak() {
           </p>
         </article>
 
-        <div id="oral-scan" className="w-full flex justify-center bg-hill-bg py-8 px-3 md:px-0">
+        <div id="oral-scan" className="w-full flex justify-center bg-hill-bg py-8 px-3 md:px-0 scroll-mt-32">
           <article  className="w-full max-w-5xl flex flex-col items-start">
             <h2 className="text-xl font-semibold font-merrieweather">
               Oral Scan – Digitális lenyomatvétel a kényelemért
@@ -61,7 +61,7 @@ export default function DigitalisTechnologiak() {
           </article>
         </div>
 
-        <article id="cbct" className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0">
+        <article id="cbct" className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0 scroll-mt-32">
           <h2 className="text-xl font-semibold mt-6 font-merrieweather">
             3D CBCT – A modern diagnosztika alapja
           </h2>

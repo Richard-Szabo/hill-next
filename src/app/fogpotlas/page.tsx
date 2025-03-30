@@ -53,10 +53,10 @@ export default function Fogpotlas() {
           </p>
         </article>
 
-        <div className="w-full flex justify-center bg-hill-bg py-8 px-3 md:px-0">
+        <div className="w-full flex justify-center bg-hill-bg py-8 px-3 md:px-0 ">
           <article
             id="implantatum"
-            className="w-full max-w-5xl flex flex-col items-start"
+            className="w-full max-w-5xl flex flex-col items-start scroll-mt-32"
           >
             <h2 className="text-xl font-semibold font-merrieweather">
               Implantátumok - A legmodernebb megoldás
@@ -82,7 +82,7 @@ export default function Fogpotlas() {
 
         <article
           id="koronak-hidak"
-          className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0"
+          className="w-full max-w-5xl flex flex-col items-start py-8 px-3 md:px-0 scroll-mt-32"
         >
           <h2 className="text-xl font-semibold mt-6 font-merrieweather">
             Esztétikus koronák és hidak
