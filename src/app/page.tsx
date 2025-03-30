@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <>
       {/* Hero slider */}
-      <div className="relative w-full h-[550px] md:h-[806px] overflow-hidden">
         <HeroSliderWrapper data={HeroSliderData} time={4000} />
-      </div>
       {/* About us */}
       <AboutUs />
       {/* Services slider  */}

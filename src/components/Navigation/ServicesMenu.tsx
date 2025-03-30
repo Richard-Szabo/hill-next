@@ -128,13 +128,13 @@ export default function ServicesMenu({handleClose}: {handleClose: () => void}) {
     <ul className="w-full flex flex-col md:flex-row md:flex-wrap text-lg md:text-xl font-light pt-3 md:pt-5 pl-2 md:pl-5 space-y-3">
       {ServicesMenuItems.map((item, index) => (
         <li key={index} className="w-full md:w-1/2 xl:w-1/3 first:mt-3">
-          <Link className="font-bold uppercase xl:whitespace-nowrap" href={item.to}>
+          <Link className="font-bold uppercase xl:whitespace-nowrap font-merrieweather hover:text-hill-secondary" href={item.to} onClick={handleClose}>
             {item.label}
           </Link>
           {item.subItems && (
             <ul className="flex flex-col xl:flex-row xl:gap-4 mb-2 md:mb-0">
               {item.subItems.map((subItem, subIndex) => (
-                <li key={subIndex} className="whitespace-nowrap hover:text-hill-primary">
+                <li key={subIndex} className="whitespace-nowrap hover:text-hill-secondary font-karla">
                   <Link href={`${item.to}${subItem.to}`} onClick={handleClose}>{subItem.label}</Link>
                 </li>
               ))}

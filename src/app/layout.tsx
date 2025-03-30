@@ -20,7 +20,30 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: "Hill Medical",
-  description: "Hill Medical családi fogászat",
+  description: 'Modern és fájdalommentes fogászati kezelések Győrújbaráton. Tapasztalt orvosaink segítenek mosolya megőrzésében.',
+  keywords: ['fogászat', 'győrújbarát', 'családi fogászat', 'digitális fogászat', 'győr', "Bölcsességfog", "Fogápolási módszerek", "Fogszabályozás", "Implantátum", "Inlay", "Láthatatlan sínek", "Rögzített fogszabályozás", "Természetes tömések", "Vérző fogíny", "X-Guide", "Ínybetegségek", "Mozgó fogak", "Szájhigénia", "Fájdalommentes fogkőszedés"],
+  authors: [{ name: 'Hill Medical' }],
+  creator: 'Hill Medical',
+  openGraph: {
+    title: 'Hill Medical – Családi fogászat Győrújbaráton',
+    description: 'Digitális és fájdalommentes kezelések barátságos környezetben.',
+    url: 'https://hillmedical.hu',
+    siteName: 'Hill Medical',
+    images: [
+      {
+        url: '/rendelo.jpg',
+        width: 1000,
+        height: 667,
+        alt: 'Hill Medical rendelő',
+      },
+    ],
+    locale: 'hu_HU',
+    type: 'website',
+  },
+  icons: {
+    icon: '/logo.svg',
+    shortcut: '/logo.svg',
+  },
 };
 
 export const viewport: Viewport = {

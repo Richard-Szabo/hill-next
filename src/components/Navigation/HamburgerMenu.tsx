@@ -54,19 +54,19 @@ export default function HamburgerMenu() {
               <ul className="w-full cursor-pointer text-2xl md:text-3xl font-merrieweather text-hill-primary/80">
                 <li
                   onClick={() => setIsOpen(false)}
-                  className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-primary py-2"
+                  className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-secondary py-2"
                 >
                   Főoldal
                 </li>
                 <li
                   onClick={() => setIsOpen(false)}
-                  className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-primary py-2"
+                  className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-secondary py-2"
                 >
                   <Link href={'/rolunk'}>Rólunk</Link>
                 </li>
                 <li className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary py-2">
                   <p
-                    className="hover:text-hill-primary"
+                    className="hover:text-hill-secondary"
                     onClick={() => setServicesOpen(!servicesOpen)}
                   >
                     Szolgáltatások
@@ -86,7 +86,7 @@ export default function HamburgerMenu() {
                 </li>
                 <li
                   onClick={() => setIsOpen(false)}
-                  className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-primary py-2"
+                  className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-secondary py-2"
                 >
                   <Link href={'/arlista'}>Árlista</Link>
                 </li>
