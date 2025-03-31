@@ -30,7 +30,7 @@ export default function Reviews() {
   
 
   return (
-    <section className="w-full flex flex-col md:flex-row justify-stretch items-stretch bg-hill-bg  ">
+    <section className="w-full flex flex-col md:flex-row justify-stretch items-stretch bg-hill-bg  mt-40 md:mt-0">
       <div className="w-full md:w-1/2 flex items-center justify-between flex-col gap-2">
         <div className="w-full h-1/4 pt-10 flex items-center justify-center">
           <h1 className="font-karla font-bold text-2xl md:text-4xl text-hill-primary">

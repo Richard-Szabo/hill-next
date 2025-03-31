@@ -16,8 +16,8 @@ export default function Fogpotlas() {
             alt="Családi rendelő Győrújbarát"
           />
         </div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 pt-8 ">
-          <h1 className="font-merrieweather text-4xl text-white font-bold">
+        <div className="w-full absolute top-0 left-1/2 -translate-x-1/2 pt-8 text-center">
+          <h1 className="font-merrieweather text-2xl md:text-4xl text-white font-bold">
             Fogpótlás
           </h1>
         </div>

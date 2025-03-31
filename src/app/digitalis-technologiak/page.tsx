@@ -17,7 +17,7 @@ export default function DigitalisTechnologiak() {
           />
         </div>
         <div className="absolute top-0 left-1/2 -translate-x-1/2 pt-8">
-          <h1 className="font-merrieweather text-4xl text-white font-bold">
+          <h1 className="font-merrieweather text-2xl truncate md:text-4xl text-white font-bold">
             Digitális technológiák
           </h1>
         </div>

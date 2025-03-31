@@ -45,14 +45,14 @@ export default function ContactClient() {
       </h1>
 
       <p className="font-merrieweather text-md md:text-lg text-center text-white font-light pb-3 md:pb-0">
-        Örömmel várjuk megkeresését, és szívesen mesélünk Önnek korszerű
+        Örömmel várjuk megkeresésed, és szívesen mesélünk Neked korszerű
         rendelőnkről és az általunk nyújtott számos szolgáltatásról.
       </p>
-      <p className="hidden md:block font-merrieweather text-md text-white font-light">
+      <p className="hidden md:block font-merrieweather text-md text-white font-light text-justify">
         Legyen szó kérdésekről a rendelőnkkel kapcsolatban, konzultáció iránti
         érdeklődésről, vagy időpontfoglalásról, barátságos és hozzáértő
-        csapatunk szívesen fogadja hívását. Ezenkívül kényelmesen, online is
-        felveheti velünk a kapcsolatot az egyszerű „Kapcsolatfelvételi”
+        csapatunk szívesen fogadja hívásod. Ezenkívül kényelmesen, online is
+        felveheted velünk a kapcsolatot az egyszerű „Kapcsolatfelvételi”
         űrlapunkon keresztül.
       </p>
 

@@ -14,9 +14,9 @@ export default function Footer() {
           {/* Kapcsolatfelvétel */}
           <div className="w-full md:w-2/4 flex flex-col items-center md:items-start gap-10">
             <p className="font-merrieweather leading-8 md:px-2 text-md text-center md:text-left">
-              Akár kérdése van rendelőnkkel kapcsolatban, akár konzultáció iránt
-              érdeklődik, vagy időpontot szeretne foglalni, barátságos és
-              hozzáértő csapatunk örömmel fogadja hívását.
+              Akár kérdésed van rendelőnkkel kapcsolatban, akár konzultáció iránt
+              érdeklődsz, vagy időpontot szeretnél foglalni, barátságos és
+              hozzáértő csapatunk örömmel fogadja hívásod.
             </p>
             <Link href="/#kapcsolat" >
               <SquareButton
@@ -68,7 +68,7 @@ export default function Footer() {
             <div className="w-full px-6 md:px-0 flex flex-col font-medium font-merrieweather text-md">
               <div className="w-full flex justify-between items-center">
                 <p>Hétfő</p>
-                <p>08:00 - 14:00</p>
+                <p>08:00 - 20:00</p>
               </div>
               <div className="w-full flex justify-between items-center">
                 <p>Kedd</p>
@@ -76,7 +76,7 @@ export default function Footer() {
               </div>
               <div className="w-full flex justify-between items-center">
                 <p>Szerda</p>
-                <p>08:00 - 14:00</p>
+                <p>13:00 - 20:00</p>
               </div>
               <div className="w-full flex justify-between items-center">
                 <p>Csütörtök</p>

@@ -156,7 +156,7 @@ export default function About() {
             <div className="w-full px-6 md:px-0 flex flex-col font-medium font-merrieweather text-md">
               <div className="w-full flex justify-between items-center">
                 <p>Hétfő</p>
-                <p>08:00 - 14:00</p>
+                <p>08:00 - 20:00</p>
               </div>
               <div className="w-full flex justify-between items-center">
                 <p>Kedd</p>
@@ -164,7 +164,7 @@ export default function About() {
               </div>
               <div className="w-full flex justify-between items-center">
                 <p>Szerda</p>
-                <p>08:00 - 14:00</p>
+                <p>13:00 - 20:00</p>
               </div>
               <div className="w-full flex justify-between items-center">
                 <p>Csütörtök</p>

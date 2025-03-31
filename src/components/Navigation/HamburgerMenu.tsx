@@ -7,12 +7,13 @@ import { IoClose } from "react-icons/io5";
 import ServicesMenu from "./ServicesMenu"; // Import Server Component
 import useScroll from "@/hooks/useScroll";
 import Link from "next/link";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(true);
   const isScrolled = useScroll();
-
+const isMobile = useIsMobile();
   
   // Prevent scrolling when menu is open
   useEffect(() => {
@@ -56,7 +57,7 @@ export default function HamburgerMenu() {
                   onClick={() => setIsOpen(false)}
                   className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-secondary py-2"
                 >
-                  Főoldal
+                  <Link href={'/'}>Főoldal</Link>
                 </li>
                 <li
                   onClick={() => setIsOpen(false)}
@@ -94,7 +95,8 @@ export default function HamburgerMenu() {
                   onClick={() => setIsOpen(false)}
                   className="pl-10 border-l-[5px] border-l-hill-primary/50 hover:border-l-hill-primary hover:text-hill-primary py-2"
                 >
-                  Online bejelentkezés
+                  <Link href={isMobile ? '/#kapcsolat-mobile':'/#kapcsolat'}>Online bejelentkezés</Link>
+                  
                 </li>
               </ul>
             </div>

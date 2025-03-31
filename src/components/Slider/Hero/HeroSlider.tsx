@@ -1,10 +1,39 @@
-'use client'
+"use client";
 
 import HeroSliderItem from "./HeroSliderItem";
-import { SliderItemProps } from "@/data/Static/sliderdata"; 
+import { SliderItemProps } from "@/data/Static/sliderdata";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+
+const NextArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div
+    className="hidden md:flex absolute right-0 top-0 h-[40rem] hover:bg-gray-800/20 w-10 z-50 group cursor-pointer justify-center items-center"
+    onClick={onClick}
+  >
+    <button
+      className=" text-hill-primary group-hover:text-hill-secondary "
+      aria-label="Previous"
+    >
+      <FaChevronRight className="w-6 h-6" />
+    </button>
+  </div>
+);
+
+const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div
+    className="hidden md:flex absolute left-0 top-0 h-[40rem] hover:bg-gray-800/20 w-10 z-50 group cursor-pointer justify-center items-center"
+    onClick={onClick}
+  >
+    <button
+      className=" text-hill-primary group-hover:text-hill-secondary "
+      aria-label="Previous"
+    >
+      <FaChevronLeft className="w-6 h-6" />
+    </button>
+  </div>
+);
 
 export default function HeroSlider({
   data,
@@ -13,12 +42,10 @@ export default function HeroSlider({
   data: SliderItemProps[];
   time?: number;
 }) {
-
-
   // Framer Motion Variants
   const settings: Settings = {
     infinite: true, // Infinite loop
-    speed: 500, // Transition speed
+    speed: 1000, // Transition speed
     slidesToShow: 1, // Number of slides visible at a time
     slidesToScroll: 1, // Number of slides to scroll at a time
     swipeToSlide: false, // Enables swipe-to-slide functionality
@@ -29,6 +56,8 @@ export default function HeroSlider({
     autoplaySpeed: time,
     pauseOnHover: false,
     dots: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     customPaging: () => (
       <div className="w-3 h-3 bg-gray-400 rounded-full cursor-pointer hover:bg-gray-600"></div>
     ),
@@ -38,15 +67,16 @@ export default function HeroSlider({
           position: "absolute",
           top: "10px",
           left: "0%",
-          height: '50px',
+          height: "50px",
           transform: "translateX(-50%), translateY(-50%)",
           display: "flex",
           gap: "10px",
-          justifyContent: 'center'
+          justifyContent: "center",
         }}
       >
         {dots}
-      </div>),
+      </div>
+    ),
   };
 
   return (

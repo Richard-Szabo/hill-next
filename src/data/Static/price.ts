@@ -154,7 +154,7 @@ export interface PricesData{
         { name: "Láthatatlan fogszabályozó", price: 860000, description: "Clear Correct /-tól" },
         { name: "Önligírozó készülék", price: 289000, priceMax: 359000, description: "Rögzített fém/ kerámia / fogív" },
         { name: "Gumis készülék", price: 249000, description: "Rögzített fém / fogív" },
-        { name: "Kivehető készülék", price: 58000, description: "állcsont" },
+        { name: "Kivehető készülék", price: 58000, description: "-tól /állcsont" },
         { name: "Aktiválás / ívcsere", price: 10000, priceMax: 15000 }
       ]
     },

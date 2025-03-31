@@ -10,11 +10,12 @@ export default function Home() {
   return (
     <>
       {/* Hero slider */}
-        <HeroSliderWrapper data={HeroSliderData} time={4000} />
+        <HeroSliderWrapper data={HeroSliderData} time={5000} />
+        {/* Services slider  */}
+      <ServicesSliderWrapper data={ServiceSliderData} />
       {/* About us */}
       <AboutUs />
-      {/* Services slider  */}
-      <ServicesSliderWrapper data={ServiceSliderData} />
+      
       {/* XXXx */}
       <ContactSection />
       {/* Reviews */}

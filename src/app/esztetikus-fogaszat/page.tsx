@@ -16,9 +16,9 @@ export default function EsztetikusFogaszat() {
             alt="Esztétikus fogászat"
           />
         </div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 pt-8">
-          <h1 className="font-merrieweather text-4xl text-white font-bold text-center">
-            Esztétikus fogászat a Hill Medicalnál
+        <div className="w-full absolute top-0 left-1/2 -translate-x-1/2 pt-8">
+          <h1 className="font-merrieweather text-2xl md:text-4xl text-white font-bold text-center">
+            Esztétikus fogászat
           </h1>
         </div>
         <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 z-30 flex justify-center items-center gap-6 px-3 md:px-[40px] flex-col lg:flex-row">

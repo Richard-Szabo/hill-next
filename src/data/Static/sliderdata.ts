@@ -1,3 +1,6 @@
+
+
+
 export interface SliderItemProps{
     id: number;
     highlightText: string;
@@ -11,7 +14,7 @@ export const HeroSliderData : SliderItemProps[] = [
     {
         id: 1,
         highlightText: "Fix fogpótlás mindenkinek!",
-        description: "Rendelőnk kihozza a mosolyodból a legjobbat!",
+        description: "Többé nem kell takargatnod a mosolyod - visszaadjuk az önbizalmad!",
         image: '9060',
         extension: 'jpeg',
         link: '/fogpotlas'
@@ -19,7 +22,7 @@ export const HeroSliderData : SliderItemProps[] = [
     {
         id: 2,
         highlightText: "Fogszabályozás, várólista nélkül!",
-        description: "Fix és láthatatlan fogszabályzókra!",
+        description: "Fix és láthatatlan fogszabályzók minden korosztálynak!",
         image: 'fogszabalyzas',
         extension: 'jpg',
         link: '/fogszabalyozas'
@@ -31,6 +34,7 @@ export const HeroSliderData : SliderItemProps[] = [
 export interface ServicesSliderItemProps extends SliderItemProps{
     imageMini: string;
     extensionMini: string;
+    icon: string;
 }
 
 export const ServiceSliderData : ServicesSliderItemProps[] = [
@@ -41,7 +45,8 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         image: 'kid-1',
         extension: 'jpg',
         imageMini: 'kid-1',
-        extensionMini: 'jpg'
+        extensionMini: 'jpg',
+        icon: 'InybetegsegIcon'
     },
     {
         id: 2,
@@ -50,7 +55,9 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         image: 'fogszabalyozas-hero',
         extension: 'jpg',
         imageMini: 'fogszabalyozas-hero',
-        extensionMini: 'jpg'
+        extensionMini: 'jpg',
+        icon: 'FogszabalyzasIcon',
+        link: '/fogszabalyozas'
     },
     {
         id: 3,
@@ -59,7 +66,8 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         image: 'kid-1',
         extension: 'jpg',
         imageMini: 'kid-1',
-        extensionMini: 'jpg'
+        extensionMini: 'jpg',
+        icon: 'SurgossegiIcon'
     },
     {
         id: 4,
@@ -68,7 +76,8 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         image: 'kid-1',
         extension: 'jpg',
         imageMini: 'kid-1',
-        extensionMini: 'jpg'
+        extensionMini: 'jpg',
+        icon: 'MegelozesIcon'
     },
     {
         id: 4,
@@ -77,6 +86,8 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         image: 'fogpotlas-hero',
         extension: 'jpg',
         imageMini: 'fogpotlas-hero',
-        extensionMini: 'jpg'
+        extensionMini: 'jpg',
+        icon: 'FogpotlasIcon',
+        link: '/fogpotlas'
     }
 ]

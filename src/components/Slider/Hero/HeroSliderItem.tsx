@@ -14,16 +14,15 @@ export default function HeroSliderItem({
 }: SliderItemComponentProps) {
   return (
     <section className={`relative ${className} `}>
-      <div className="relative w-full h-[24rem] md:h-[40rem]">
+      <div className="relative w-full h-[28rem] md:h-[40rem] bg-gray-500">
         <Image
           src={`/images/hero/${item.image}.${item.extension}`}
           alt="Családi rendelő Győrújbarát"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover opacity-20 blur-sm"
         />
-        <div className="absolute inset-0 bg-gray-600/60 z-10" />
       </div>
       <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-30 flex justify-center items-center gap-6  px-3 md:px-[40px] flex-col lg:flex-row">
         <div className="lg:w-1/2 flex items-center md:items-start justify-center flex-col gap-3 md:gap-6">
