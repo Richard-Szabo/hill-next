@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   creator: 'Hill Medical',
   openGraph: {
     title: 'Hill Medical – Családi fogászat Győrújbaráton',
-    description: 'Digitális és fájdalommentes kezelések barátságos környezetben.',
+    description: 'Modern és fájdalommentes fogászati kezelések Győrújbaráton. Tapasztalt orvosaink segítenek mosolya megőrzésében.',
     url: 'https://hillmedical.hu',
     siteName: 'Hill Medical',
     images: [
