@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ServicesSliderItemProps } from "@/data/Static/sliderdata"; 
 import { IoIosArrowDropright } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ServiceSliderItemProps {
   item: ServicesSliderItemProps;
@@ -54,7 +55,7 @@ export default function ServicesSliderItem({
         {/* Mini Image */}
         <motion.img
           src={`/images/service/${item.imageMini}.${item.extensionMini}`}
-          className="h-1/2 w-full object-cover"
+          className="h-1/2 w-full object-cover object-top"
           loading="lazy"
           alt={`${item.highlightText} image small`}
           variants={{
@@ -85,9 +86,9 @@ export default function ServicesSliderItem({
           <p className="font-light text-lg text-left max-h-20 text-ellipsis overflow-hidden">
             {item.description}
           </p>
-          <p className="font-light text-lg flex flex-row items-center gap-2 text-hill-highlight">
+          <Link href={item.link ?? '#'} className="font-light text-lg flex flex-row items-center gap-2 text-hill-highlight hover:text-hill-primary cursor-pointer">
             Részletek <IoIosArrowDropright />
-          </p>
+          </Link>
         </motion.div>
       </motion.div>
     </div>
