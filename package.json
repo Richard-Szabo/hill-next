@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "dev-local": "next dev --turbopack --hostname 192.168.50.95",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start --hostname 192.168.50.95",
     "start-prod": "next start",
     "lint": "next lint"
@@ -15,6 +16,7 @@
     "framer-motion": "^12.5.0",
     "hill-next": "file:",
     "next": "15.2.2",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^6.10.0",
     "nodemailer-sendgrid": "^1.0.3",
     "react": "^19.0.0",

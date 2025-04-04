@@ -19,6 +19,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hillmedical.hu"),
   title: "Hill Medical",
   description: 'Modern és fájdalommentes fogászati kezelések Győrújbaráton. Tapasztalt orvosaink segítenek mosolya megőrzésében.',
   keywords: ['fogászat', 'győrújbarát', 'családi fogászat', 'digitális fogászat', 'győr', "Bölcsességfog", "Fogápolási módszerek", "Fogszabályozás", "Implantátum", "Inlay", "Láthatatlan sínek", "Rögzített fogszabályozás", "Természetes tömések", "Vérző fogíny", "X-Guide", "Ínybetegségek", "Mozgó fogak", "Szájhigénia", "Fájdalommentes fogkőszedés"],
@@ -60,7 +61,7 @@ export default function RootLayout({
     <html lang="en" className={`${karla.variable} ${merriweather.variable}`}>
       <body>
         <Header />
-        <main className="pt-28 lg:pt-[156px] flex-grow max-w-screen">
+        <main className="pt-28 lg:pt-[156px] flex-grow max-w-screen ">
           {children}
         </main>
       </body>

@@ -9,7 +9,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const NextArrow = ({ onClick }: { onClick?: () => void }) => (
   <div
-    className="hidden md:flex absolute right-0 top-0 h-[40rem] hover:bg-gray-800/20 w-10 z-50 group cursor-pointer justify-center items-center"
+    className="hidden md:flex absolute right-0 top-0 h-[40rem] hover:bg-gray-800/20 w-10 z-20 group cursor-pointer justify-center items-center"
     onClick={onClick}
   >
     <button
@@ -23,7 +23,7 @@ const NextArrow = ({ onClick }: { onClick?: () => void }) => (
 
 const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
   <div
-    className="hidden md:flex absolute left-0 top-0 h-[40rem] hover:bg-gray-800/20 w-10 z-50 group cursor-pointer justify-center items-center"
+    className="hidden md:flex absolute left-0 top-0 h-[40rem] hover:bg-gray-800/20 w-10 z-20 group cursor-pointer justify-center items-center"
     onClick={onClick}
   >
     <button

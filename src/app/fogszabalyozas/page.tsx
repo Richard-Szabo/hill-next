@@ -1,11 +1,18 @@
 import SquareButton from "@/components/Shared/Basic/SquareButton";
 import SquareContainer from "@/components/Shared/Basic/SquareContainer";
+import SeoHead from "@/components/Shared/Seo/SeoHead";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Fogszabalyozas() {
   return (
     <div className="w-full flex flex-col items-center justify-start">
+      <SeoHead
+  title="Fogszabályozás gyermekeknek és felnőtteknek"
+  description="Személyre szabott fogszabályozás modern eszközökkel gyermekeknek és felnőtteknek Győrben, a Hill Medical rendelőjében."
+  url="https://hillmedical.hu/szolgaltatasok/fogszabalyozas"
+  image="/images/service/fogszabalyozas-hero.jpg"
+/>
       <section className={`relative w-full`}>
         <div className="w-full bg-gray-500 h-[18rem] md:h-[28rem]">
           <Image

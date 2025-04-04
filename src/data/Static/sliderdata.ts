@@ -46,7 +46,8 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         extension: 'jpg',
         imageMini: 'inybetegseg',
         extensionMini: 'jpg',
-        icon: 'InybetegsegIcon'
+        icon: 'InybetegsegIcon',
+        link: '/inybetegsegek'
     },
     {
         id: 2,
@@ -67,7 +68,8 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         extension: 'jpg',
         imageMini: 'surgosseg',
         extensionMini: 'jpg',
-        icon: 'SurgossegiIcon'
+        icon: 'SurgossegiIcon',
+        link: '/surgossegi-ellatas'
     },
     {
         id: 4,
@@ -77,7 +79,9 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         extension: 'jpg',
         imageMini: 'megelozes',
         extensionMini: 'jpg',
-        icon: 'MegelozesIcon'
+        icon: 'MegelozesIcon',
+        link: '/megelozes'
+
     },
     {
         id: 4,

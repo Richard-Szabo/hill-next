@@ -4,6 +4,8 @@ import SquareButton from "../Shared/Basic/SquareButton";
 import { toast } from "sonner";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
+
 
 interface ContactFormInputs {
   firstName: string;
@@ -21,7 +23,7 @@ export default function ContactForm() {
     formState: { errors },
     reset,
   } = useForm<ContactFormInputs>();
-
+const router = useRouter();
   const onSubmit: SubmitHandler<ContactFormInputs> = async (
     formData: ContactFormInputs
   ) => {
@@ -37,7 +39,9 @@ export default function ContactForm() {
       }),
     })
       .then(() => {
+        router.push('/kapcsolatfelvetel/visszaigazolas');
         toast.success("A megkeresését fogadtuk, hamarosan felkeressük önt!");
+        
         reset();
       })
       .catch(() => {

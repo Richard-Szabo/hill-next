@@ -179,7 +179,7 @@ export default function About() {
                 <p>Zárva</p>
               </div>
               <div className="w-full flex justify-between items-center">
-                <p>Szombat</p>
+                <p>Vasárnap</p>
                 <p>Zárva</p>
               </div>
             </div>
