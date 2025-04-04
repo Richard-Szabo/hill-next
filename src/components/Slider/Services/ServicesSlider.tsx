@@ -10,15 +10,15 @@ import "slick-carousel/slick/slick-theme.css";
 const ServicesSlider = ({ data }: { data: ServicesSliderItemProps[] }) => {
   const settings : Settings = {
     infinite: true, // Infinite loop
-    speed: 500, // Transition speed
+    speed: 300, // Transition speed
     slidesToShow: 4, // Number of slides visible at a time
     slidesToScroll: 1, // Number of slides to scroll at a time
     swipeToSlide: true, // Enables swipe-to-slide functionality
     centerMode:true,
     initialSlide: 0, // Set the starting slide index
-    autoplay: false,
+    autoplay: true,
     lazyLoad: 'progressive',
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
     responsive: [
       {
