@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 
 import { Karla, Merriweather } from "next/font/google";
+import GTM from "@/components/Google/GTM";
+import GTMTracker from "@/components/Google/GTMTracker";
 
 const karla = Karla({
   subsets: ["latin"],
@@ -58,8 +60,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${karla.variable} ${merriweather.variable}`}>
+    <html lang="hu" className={`${karla.variable} ${merriweather.variable}`}>
+      <head>
+        {/* GTM head script */}
+        <GTM />
+      </head>
       <body>
+         {/* GTM noscript in body */}
+         <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-P4XL6WCH"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        <GTMTracker />
         <Header />
         <main className="pt-28 lg:pt-[156px] flex-grow max-w-screen ">
           {children}
