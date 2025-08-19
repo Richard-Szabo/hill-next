@@ -49,7 +49,7 @@ export default function ContactForm() {
           );
         }
       })
-      .catch((err) => {
+      .catch(() => {
         toast.warning(
           "Az üzenetét nem sikerült elküldeni, kérjük próbálja újra!"
         );

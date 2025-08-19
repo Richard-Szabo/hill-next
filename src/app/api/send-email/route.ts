@@ -51,9 +51,9 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ success: true }, { status: 200 })
-  } catch (err: any) {
+  } catch (err) {
     return NextResponse.json(
-      { success: false, error: err?.message ?? "Unexpected error" },
+      { success: false, error: err ?? "Unexpected error" },
       { status: 500 }
     )
   }
