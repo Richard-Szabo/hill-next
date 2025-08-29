@@ -23,13 +23,13 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hillmedical.hu"),
   title: "Hill Medical",
-  description: 'Modern és fájdalommentes fogászati kezelések Győrújbaráton. Tapasztalt orvosaink segítenek mosolya megőrzésében.',
-  keywords: ['fogászat', 'győrújbarát', 'családi fogászat', 'digitális fogászat', 'győr', "Bölcsességfog", "Fogápolási módszerek", "Fogszabályozás", "Implantátum", "Inlay", "Láthatatlan sínek", "Rögzített fogszabályozás", "Természetes tömések", "Vérző fogíny", "X-Guide", "Ínybetegségek", "Mozgó fogak", "Szájhigénia", "Fájdalommentes fogkőszedés"],
+  description: 'Modern és fájdalommentes fogászati kezelések Győrújbaráton kicsiknek és nagyoknak egyaránt. Tapasztalt orvosaink segítenek mosolya megőrzésében.',
+  keywords: ['fogászat', 'győrújbarát', 'családi fogászat', 'digitális fogászat', 'győr', "Bölcsességfog", "Fogápolási módszerek", "Fogszabályozás", "Implantátum", "Inlay", "Láthatatlan sínek", "Rögzített fogszabályozás", "Természetes tömések", "Vérző fogíny", "X-Guide", "Ínybetegségek", "Mozgó fogak", "Szájhigénia", "Fájdalommentes fogkőszedés", "Gyermekfogászat"],
   authors: [{ name: 'Hill Medical' }],
   creator: 'Hill Medical',
   openGraph: {
-    title: 'Hill Medical – Családi fogászat Győrújbaráton',
-    description: 'Modern és fájdalommentes fogászati kezelések Győrújbaráton. Tapasztalt orvosaink segítenek mosolya megőrzésében.',
+    title: 'Hill Medical - Családi fogászat Győrújbaráton',
+    description: 'Modern és fájdalommentes fogászati kezelések Győrújbaráton kicsiknek és nagyoknak egyaránt. Tapasztalt orvosaink segítenek mosolya megőrzésében.',
     url: 'https://hillmedical.hu',
     siteName: 'Hill Medical',
     images: [

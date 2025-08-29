@@ -120,6 +120,10 @@ const ServicesMenuItems: ServicesMenuItemProps[] = [
       },
     ],
   },
+  {
+    label: "Gyermekfogászat",
+    to: "/gyermekfogaszat",
+  }
 ];
 
 

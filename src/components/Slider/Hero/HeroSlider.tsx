@@ -45,7 +45,7 @@ export default function HeroSlider({
   // Framer Motion Variants
   const settings: Settings = {
     infinite: true, // Infinite loop
-    speed: 1000, // Transition speed
+    speed: 600, // Transition speed
     slidesToShow: 1, // Number of slides visible at a time
     slidesToScroll: 1, // Number of slides to scroll at a time
     swipeToSlide: false, // Enables swipe-to-slide functionality

@@ -26,7 +26,17 @@ export const HeroSliderData : SliderItemProps[] = [
         image: 'fogszabalyzas',
         extension: 'jpg',
         link: '/fogszabalyozas'
-    }
+    },
+    {
+        id: 3,
+        highlightText: "Gyermekfogászat – mosoly félelem nélkül!",
+        description: "Játékos, fájdalommentes kezelések és barátságos környezet a legkisebbeknek is.",
+        image: "gyermekfogaszat-hero",
+        extension: "jpg",
+        link: "/gyermekfogaszat"
+      }
+      
+  
 ]
 
 
@@ -93,5 +103,5 @@ export const ServiceSliderData : ServicesSliderItemProps[] = [
         extensionMini: 'jpg',
         icon: 'FogpotlasIcon',
         link: '/fogpotlas'
-    }
+    },
 ]
